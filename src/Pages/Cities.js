@@ -16,7 +16,11 @@ function Cities(props) {
   }, [])
 
   return (
-    <div>
+    <div className="landingPage" >
+      <h1> My Trvels </h1>
+      <h4> Welcome to Nashid's Travel blog! Select any destinations below on tips and tricks on traveling the globe this year, starting with the destinations below</h4>
+      <div className="cityCard">
+        
       {cities.map((city) => {
         return (
           <CityCard
@@ -26,6 +30,7 @@ function Cities(props) {
           />
         )
       })}
+      </div>
     </div>
   )
 }
