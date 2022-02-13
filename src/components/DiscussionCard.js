@@ -20,8 +20,8 @@ function DiscussionCard(props) {
     <div>
       {displayEditForm ?(<EditDiscussionCard discussion={props.discussion} setDisplayEditForm={setDisplayEditForm}/>):(
       <div>
-      {/* <h3>{props.discussion.author}</h3> */}
-      <p>{props.discussion.content}</p>
+      <h3 className="getDiscussionTitle">{props.discussion.title}</h3> 
+      <p className="getDiscussion">{props.discussion.content}</p>
       <button onClick={deleteDiscussion}>delete</button>
       <button onClick={openUpdateForm}>update</button>
       </div>)}
