@@ -23,8 +23,8 @@ function DiscussionPost(props) {
     console.log(discussionBody)
   }
   return (
-  <form onSubmit={addDiscussion}>
-    <label>Title</label>
+  <form className='DiscussionFrom' onSubmit={addDiscussion}>
+    <label >Name</label>
     <input type="text" name="title" placeholder="name"/>
     <label>Content</label>
     <textarea type="text" name="content" placeholder="name"/>
