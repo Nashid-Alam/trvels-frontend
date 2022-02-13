@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.PictureDetail{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  width: 400px;
+  height:400px;
+  overflow-x: scroll;
+}
+.pictureCard{
+  width: 400px;
+  height:400px;
 }
 
-.App-link {
-  color: #61dafb;
+.Discussion{
+  background-color: rgba(9, 8, 8, 0.468);
+  border-radius: 20px;
+  border-color: black;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body{
+  background-color: rgb(242, 252, 252);
+
+}
+
+.DiscussionFrom{
+  background-color: rgba(9, 8, 8, 0.468);
+  border-radius: 10px;
+  border-color: black;
+  margin-top: 20px;
+  padding: 20px;
+}
+.cityPic{
+  width: 200px;
+  height:200px;
+}
+.cityCard{
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  margin: 40px;
+}
+.city{
+  padding: 20px;
+}
+
+.pictureCard{
+  padding-right:40px
+}
+.getDiscussion{
+  background-color: rgba(245, 245, 245, 0.79);
+  border-radius: 20px;
+  padding:5px;
+}
+
+.landingPage{
+  background-image: url("https://thumbs.dreamstime.com/z/blue-abstract-dotted-world-map-blue-abstract-dotted-world-map-modern-style-136065062.jpg");
+  background-size: cover;
 }
