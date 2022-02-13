@@ -27,7 +27,7 @@ function Blogs(props) {
           <BlogCard
             key={blog.id}
             blog={blog}
-            // onClick={() => props.history.push(`/blogs/${city.id}`)}
+            onClick={() => props.history.push(`/blogdetail/${blog.id}`)}
           />
         )
       })}
