@@ -4,11 +4,11 @@ function CityCard(props) {
   
 
   return (
-    <div>
-      <h4 onClick={props.onClick}>
+    <div className = "city"onClick={props.onClick}>
+      <h4>
         {props.city.name}, {props.city.country}
       </h4>
-      <img src={props.city.posts[0].pictures[0].url} alt="pics" /> 
+      <img className="cityPic" src={props.city.posts[0].pictures[0].url} alt="pics" /> 
     </div>
   )
 }
