@@ -26,8 +26,8 @@ function Blogdetail(props) {
   }, [])
 
   return (
-    <div>
-      <div>
+    <div className="detailPage">
+      <div className= "description">
       <BlogDetailCard blog={blogDetail} />
       </div>
       <h1>Pictures</h1>

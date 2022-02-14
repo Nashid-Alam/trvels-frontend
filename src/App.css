@@ -1,9 +1,11 @@
 .PictureDetail{
   display: flex;
   flex-direction: row;
-  width: 400px;
-  height:400px;
+  width: 420px;
+  height:500px;
   overflow-x: scroll;
+  margin: auto;
+  background-color: whitesmoke;
 }
 .pictureCard{
   width: 400px;
@@ -11,7 +13,7 @@
 }
 
 .Discussion{
-  background-color: rgba(9, 8, 8, 0.468);
+  background-color: rgb(148, 142, 142);
   border-radius: 20px;
   border-color: black;
   padding: 10px;
@@ -23,7 +25,7 @@ body{
 }
 
 .DiscussionFrom{
-  background-color: rgba(9, 8, 8, 0.468);
+  background-color: rgb(104, 101, 101);
   border-radius: 10px;
   border-color: black;
   margin-top: 20px;
@@ -38,21 +40,59 @@ body{
   flex-direction: row;
   padding: 40px;
   margin: 40px;
+  justify-content: center;
 }
 .city{
   padding: 20px;
+  background-color: rgba(147, 174, 171, 0.351);
 }
 
 .pictureCard{
   padding-right:40px
 }
 .getDiscussion{
-  background-color: rgba(245, 245, 245, 0.79);
+  background-color: rgb(245, 245, 245);
   border-radius: 20px;
   padding:5px;
 }
 
-.landingPage{
+.page{
   background-image: url("https://thumbs.dreamstime.com/z/blue-abstract-dotted-world-map-blue-abstract-dotted-world-map-modern-style-136065062.jpg");
   background-size: cover;
+}
+.detailPage{
+  background-image: url("https://thumbs.dreamstime.com/z/blue-abstract-dotted-world-map-blue-abstract-dotted-world-map-modern-style-136065062.jpg");
+  background-size: 170%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.description{
+  margin: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+  font-size: larger;
+  background-color: rgba(147, 174, 171, 0.351);
+}
+.appName{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+
+}
+label{
+  padding:20px;
+  font-size: larger;
+}
+input{
+  font-size: large;
+  border-radius: 5px;
+}
+textarea{
+  width: 400px;
+  margin: auto;
+  border-radius: 5px;
+}
+button{
+  margin: 10px;
 }
