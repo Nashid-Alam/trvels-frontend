@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react"
 
 function Home() {
-  return <div>Hello react</div>;
+  return <div>This will be out login/logout page</div>
 }
 
-export default Home;
+export default Home

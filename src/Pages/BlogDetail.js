@@ -9,7 +9,6 @@ const BASE_URL = process.env.REACT_APP_BASE_URL
 
 function Blogdetail(props) {
   const blogId = props.match.params.post_id
-
   const [blogDetail, setBlogDetail] = useState({})
   const [pictures, setPictures] = useState([])
   const [discussions, setDiscussions] = useState([])

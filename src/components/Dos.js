@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react"
 
 function Dos() {
-  return <div></div>;
+  return <div></div>
 }
 
-export default Dos;
+export default Dos

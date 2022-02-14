@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import axios from "axios"
-import BlogCard from '../components/BlogCard'
+import BlogCard from "../components/BlogCard"
 
 const BASE_URL = process.env.REACT_APP_BASE_URL
 
