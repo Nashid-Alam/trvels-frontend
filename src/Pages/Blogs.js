@@ -20,7 +20,7 @@ function Blogs(props) {
   }, [])
 
   return (
-    <div>
+    <div className="blogList">
       <h1>List of Blogs in {city.name}</h1>
       {blogs.map((blog) => {
         return (

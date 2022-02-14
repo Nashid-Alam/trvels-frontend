@@ -16,7 +16,7 @@
   background-color: rgb(148, 142, 142);
   border-radius: 20px;
   border-color: black;
-  padding: 10px;
+  margin-top: 20px;
 }
 
 body{
@@ -95,4 +95,11 @@ textarea{
 }
 button{
   margin: 10px;
+}
+.blogPage{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("https://thumbs.dreamstime.com/z/blue-abstract-dotted-world-map-blue-abstract-dotted-world-map-modern-style-136065062.jpg")
+
 }

@@ -4,7 +4,7 @@ import axios from 'axios';
 const BASE_URL = process.env.REACT_APP_BASE_URL
 
 function EditDiscussionCard(props) {
-  console.log(props)
+  // console.log(props)
   const editDiscussion = async (e) =>{
     e.preventDefault()
    
@@ -14,9 +14,18 @@ function EditDiscussionCard(props) {
     
     const content = e.target.content.value
     const discussionBody = { 
-    title: title,
-    content: content
+    
     }
+    if (title ===""){
+        discussionBody.title =props.discussion.title
+    }
+    else {discussionBody.title = title}
+
+    if (content ===""){
+      discussionBody.title =props.discussion.content
+  }
+  else {discussionBody.content = content}
+    console.log(discussionBody)
     const response = await axios.put(`${BASE_URL}/blog-api/discussions/${props.discussion.id}`, discussionBody)
     console.log(discussionBody)
     props.setDisplayEditForm(false)
@@ -24,9 +33,9 @@ function EditDiscussionCard(props) {
   return (
   <form onSubmit={editDiscussion}>
     <label>Title</label>
-    <input type="text" name="title" placeholder="name"/>
+    <input type="text" name="title" placeholder={props.discussion.title}/>
     <label>Content</label>
-    <textarea type="text" name="content" placeholder="name"/>
+    <textarea type="text" name="content" placeholder={props.discussion.content}/>
     <button>update</button>
   </form>
   )

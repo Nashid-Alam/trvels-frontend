@@ -11,7 +11,7 @@ function DiscussionCard(props) {
     const response = await axios.delete(
       `${BASE_URL}/blog-api/discussions/${props.discussion.id}`
     )
-    console.log(response)
+  
   }
   const openUpdateForm =(e) =>{
     setDisplayEditForm(true)

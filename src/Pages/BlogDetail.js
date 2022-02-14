@@ -27,22 +27,23 @@ function Blogdetail(props) {
 
   return (
     <div className="detailPage">
-      <div className= "description">
-      <BlogDetailCard blog={blogDetail} />
+      <div className="description">
+        <BlogDetailCard blog={blogDetail} />
       </div>
-      <h1>Pictures</h1>
+
       <div className="PictureDetail">
-      {pictures.map((picture) => {
-        return <PictureCard picture={picture} />
-      })}
+        {pictures.map((picture) => {
+          return <PictureCard picture={picture} />
+        })}
       </div>
       <div className="Discussion">
-      <h1>Discussions</h1>
-      {discussions.map((discussion) => {
-        return <DiscussionCard discussion={discussion} />
-      })}
+        {discussions.map((discussion) => {
+          return (
+            <DiscussionCard discussion={discussion} Blogdetail={Blogdetail} />
+          )
+        })}
       </div>
-      <DiscussionPost blogId={blogId} />
+      <DiscussionPost blogId={blogId} Blogdetail={Blogdetail} />
     </div>
   )
 }
